@@ -1,49 +1,55 @@
 <!DOCTYPE html>
 <html>
 	<head>
-		<meta charset="utf-8" />
-		<meta name="viewport" content="width=device-width, initial-scale=1">
-		<title>
-			我的第一个html
-		</title>
+		<meta charset="utf-8">
+		<title></title>
 		<style type="text/css">
-			#u1{
-				list-style: none;
-				background-color: aqua;
-				width: 1100px;
-				margin:20px auto;
-				}
-			#u1>li{
-				 /*横向显示 */
-				float:left;
-				
+			#d{
+				/* 设置div的宽度,才可以居中显示 */
+				width: 1000px;
+				/* 设置div水平居中 */
+				margin : 50px auto;
 			}
 			.nav{
-				background-color: cornflowerblue;
+				/* 根据超链接数量确定超链接宽度,使所有超链接总和等于div宽度,所以用百分比可以铺满整个div */
+				width: 6.25%;
+				height: 31px;
+				background-color: #6495ED;
 				text-decoration: none;
+				float: left;
 				color: white;
-				padding: 5px 80px;
+				/* 水平居中 */
+				text-align: center;
+				font-weight: bold;
+				/* 设置内容行高等于超链接高度,这样文字在超链接中可以居中,相当于垂直居中 */
+				line-height: 31px;
 			}
-			.nav:hover{
-				background-color: red;
+			a:hover{
+				/* 鼠标移入变色 */
+				background-color: #A52A2A;
 			}
 		</style>
 	</head>
 	<body>
-		<ul id="u1">
-			<li><a href="#" class="nav">首页</a></li>
-			<li><a href="#" class="nav">简介</a></li>
-			<li><a href="#" class="nav">动态</a></li>
-			<li><a href="#" class="nav">产品</a></li>
-			<li><a href="#" class="nav">关于</a></li>
-		</ul>
-		<ul id="u2">
-			<li><a href="#" class="nav1">首页</a></li>
-			<li><a href="#" class="nav1">简介</a></li>
-			<li><a href="#" class="nav1">动态</a></li>
-			<li><a href="#" class="nav1">产品</a></li>
-			<li><a href="#" class="nav1">关于</a></li>
-		</ul>
-		
+		<div id="d">
+			<a href = "#" class = "nav" title="网站首页">首页</a>
+			<a href = "#" class = "nav" title = "可以看网站的新闻">新闻</a>
+			<a href = "#" class = "nav" title = "可以联系网站管理人员">联系</a>
+			<a href = "#" class = "nav" title = "设计网站相关信息">关于</a>
+			<a href = "#" class = "nav">首页</a>
+			<a href = "#" class = "nav">新闻</a>
+			<a href = "#" class = "nav">联系</a>
+			<a href = "#" class = "nav">关于</a>
+			<a href = "#" class = "nav">首页</a>
+			<a href = "#" class = "nav">新闻</a>
+			<a href = "#" class = "nav">联系</a>
+			<a href = "#" class = "nav">关于</a>
+			<a href = "#" class = "nav">首页</a>
+			<a href = "#" class = "nav">新闻</a>
+			<a href = "#" class = "nav">联系</a>
+			<a href = "1.html" class = "nav">换页</a>
+		</div>
+	
 	</body>
 </html>
+
